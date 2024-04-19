@@ -1,0 +1,99 @@
+html,
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #6c6c6c;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#renderCanvas {
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+}
+
+#canvasZone {
+    width: 100%;
+    height: 100%;
+}
+
+#display-fps {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #ca7497;
+    font-size: 16px;
+}
+
+#scene-explorer-host {
+    position: fixed !important;
+    left: 0;
+}
+
+#inspector-host {
+    position: fixed !important;
+    right: 0;
+}
+
+.UI {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 5px;
+    margin-top: 30px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #7fbf7f;
+    width: 0%;
+}
+
+.progress-txt {
+    color: #7fbf7f;
+    font-size: 12px;
+}
+
+.start-game {
+    display: none;
+    margin: 2.5rem;
+}
+
+.start-game button {
+    font: inherit;
+    background: transparent;
+    color: #7fbf7f;
+    border: 2px solid #7fbf7f;
+    padding: 10px 10px 8px;
+    position: relative;
+    font-size: 1.2em;
+}
